@@ -135,7 +135,7 @@ function install_package() {
     fi
 
     # Find the URL for the package.
-    url=$(repoquery --repofrompath=centos7,http://mirror.centos.org/centos/7/os/`arch` \
+    url=$(repoquery --repofrompath=centos7,http://mirror.kakao.com/centos/7/os/`arch` \
         --repoid=centos7 -q --qf="%{location}" "$1" | \
         sed s/x86_64.rpm$/`arch`.rpm/ | \
         sed s/i686.rpm$/`arch`.rpm/g | \
@@ -215,7 +215,7 @@ function install_missing_dependencies() {
             echo "Finding dependency for ${file}"
 
             # Find the package name for this library.
-            package=$(repoquery --repofrompath=centos7,http://mirror.centos.org/centos/7/os/`arch` \
+            package=$(repoquery --repofrompath=centos7,http://mirror.kakao.com/centos/7/os/`arch` \
                 --repoid=centos7 -q --qf="%{name}" --whatprovides "$file")
 
             install_package "${package}"
