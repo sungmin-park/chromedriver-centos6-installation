@@ -6,5 +6,5 @@ This project adds chromedriver  ,  which  is  installed at /usr/bin/chromedriver
 
 usage:
 
-curl https://raw.githubusercontent.com/staier/chromedriver-centos6-installation/master/install-google-chrome.sh |bash
+curl https://raw.githubusercontent.com/sungmin-park/chromedriver-centos6-installation/kakao/install-google-chrome.sh |bash
 
