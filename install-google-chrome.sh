@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# install missing linux-ng for docker, ldd.sh requires mount and unshare
+# chrome drive requries unzip to unzip
+yum install -y util-linux-ng unzip
 
 # Copyright 2017-present: Intoli, LLC
 # Source: https://intoli.com/blog/installing-google-chrome-on-centos/
